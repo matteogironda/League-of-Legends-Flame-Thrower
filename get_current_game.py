@@ -8,7 +8,6 @@ def getAPI_key():
 
 def get_result(summoner):
     
-    print("in get result")
     cass.set_riot_api_key(getAPI_key())
     last_match = summoner.match_history[0]
     champion_id_to_name_mapping = {
@@ -21,8 +20,7 @@ def get_result(summoner):
     return win, champ_played_name
 
 def throw_flame(summoner_name):
-    
-    print("in throw flame")
+
     summoner = Summoner(name=summoner_name, region="NA")
     win, champ = get_result(summoner)
 
