@@ -2,6 +2,7 @@ import cassiopeia as cass
 from cassiopeia import Summoner
 
 def getAPI_key():
+    #Create a txt file w/ the API key in the same folder as the script
     f = open("./api_key.txt", "r")
     return f.read()
 
