@@ -2,7 +2,7 @@ import os
 import discord
 import get_match as gm
 
-TOKEN = 'OTcwODczMTUyMzc4OTE2ODc0.YnCSFQ.t12q1eKEd-ruHXYpNjeZCwfq5Qs'
+TOKEN = 'your-token-key'
 client = discord.Client()
 
 @client.event
