@@ -2,7 +2,7 @@ import os
 import discord
 import get_match as gm
 
-TOKEN = 'OTcwODczMTUyMzc4OTE2ODc0.YnCSFQ.aMJR07M-zJ3PKhDFvA2iv2VzCyE'
+TOKEN = 'token-number'
 client = discord.Client()
 guild = discord.Guild
 channel = client.get_guild(970872820081000529)
