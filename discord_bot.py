@@ -2,10 +2,8 @@ import os
 import discord
 import get_match as gm
 
-TOKEN = 'token-number'
+TOKEN = 'OTcwODczMTUyMzc4OTE2ODc0.YnCSFQ.t12q1eKEd-ruHXYpNjeZCwfq5Qs'
 client = discord.Client()
-guild = discord.Guild
-channel = client.get_guild(970872820081000529)
 
 @client.event
 async def on_ready():
@@ -15,12 +13,16 @@ async def on_ready():
 @client.event
 async def on_message(message):
 
+    if message.author == client.user:
+        return
+    
     msg = message.content
-    summoner = msg[1]
+    summoner = msg.split()[1]
 
-    if msg == "Is f{summoner} good at League?": 
-        channel.send(gm.throw_flame(summoner))
+    if msg == "Is "+ summoner + " good at League?": 
+        await message.channel.send(gm.throw_flame(summoner))
     else:
+        print('not it')
         pass
     return
 
