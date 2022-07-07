@@ -27,7 +27,7 @@ def throw_flame(summoner_name):
     if win:
         pass
     else:
-        print("\n" + f"{summoner_name}" + ', you fuckin scrub, you lost your last game as ' + f"{champ}" + '.')
+        print("\n" + f"{summoner_name}" + ', you scrub, you lost your last game as ' + f"{champ}" + '.')
 
 if __name__ == "__main__":
     throw_flame("YodelYaddle")
